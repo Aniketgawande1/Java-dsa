@@ -38,12 +38,8 @@ public class pattern {
             System.out.println();
         } 
     }
-
-    public static void main(String[] args) {
-        hollow_rectangle(5, 5);
-        pyramid_triangle(5);
-        inverted_pyramid_triangle(6);
-        // for (int i = 1; i <= 205; i++) {
+    public static void unknown(){
+         // for (int i = 1; i <= 205; i++) {
         //     for (int j = 0; j <= i; j++) {
         //         System.out.print("*");
                 
@@ -57,6 +53,13 @@ public class pattern {
         //     System.out.println();
         // }
 
+    }
+
+    public static void main(String[] args) {
+        hollow_rectangle(5, 5);
+        pyramid_triangle(5);
+        inverted_pyramid_triangle(6);
+       
 
             
         }
