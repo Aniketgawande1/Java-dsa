@@ -43,10 +43,50 @@ public static int linearSearch(int numbers[],int key){
     return -1;
 
 }
-    public static void main(String[] args) {
+
+public static int binarySearch(int numbers[], int key){
+    int start = 0, end = numbers.length-1;
+
+    while(start <= end ){
+        int mid = (start +end ) / 2;
+        if(numbers[mid] == key ){
+            return mid;
+
+        }
+        if (numbers[mid]<key) {
+            start = mid +1;
+
+        }else {
+            end = mid-1; 
+        }
+    }
+    return -1;
+}
+// Rerverse an array 
+
+public static void reverse(int numbers[]){
+    int first = 0, last = numbers.length-1;
+}
+
+// pairs  in an array
+
+public static void ptintpairs(int num[]){
+    for (int i = 0; i<num.length; i++){
+        int current = num[i];//2,4,,6,8,10
+        for (int j=i+1; j<num.length; j++){
+            System.out.print("(" +current +","+ num[j] + ")");
+            
+        }
+        System.out.println();
+    }
+}
+
+public static void main(String[] args) {
+    int num[] = {2, 4, 6 , 8, 10};
+    ptintpairs(num);
 
         int numbers[] ={ 2,4,6,8,10,12,14,16};
-        int key = 10;
+        int key = 12;
         int index = linearSearch(numbers, key);
         if (index == -1) {
             System.out.println("NOT FOUND");
@@ -54,6 +94,7 @@ public static int linearSearch(int numbers[],int key){
         } else{
             System.out.println("Key is at index "+ index);
         }
+        System.out.println("index for key is :" + binarySearch(numbers, key));
 
         //creating an array
 
