@@ -43,7 +43,7 @@ public static int linearSearch(int numbers[],int key){
     return -1;
 
 }
-
+//binary search
 public static int binarySearch(int numbers[], int key){
     int start = 0, end = numbers.length-1;
 
@@ -98,17 +98,17 @@ public static void main(String[] args) {
 
         //creating an array
 
-    //      int numbers[] = {1 ,2, 6 , 3 , 5};
-    //      System.out.println("largest value is :"+ getLargest(numbers));
-    //     int marks [] ={97, 98 ,99};
-    //     int nonChangable = 5;
-    //     update(marks, nonChangable);
+        //  int numbers[] = {1 ,2, 6 , 3 , 5};
+        //  System.out.println("largest value is :"+ getLargest(numbers));
+        // int marks [] ={97, 98 ,99};
+        // int nonChangable = 5;
+        // update(marks, nonChangable);
 
-    //     //print our marks
-    //     for(int i = 0; i<marks.length;i++){
-    //         System.out.print(marks[i]+" ");
-    //     }
-    //     System.out.println();
+        // //print our marks
+        // for(int i = 0; i<marks.length;i++){
+        //     System.out.print(marks[i]+" ");
+        // }
+        // System.out.println(); 
      }
     
 }
